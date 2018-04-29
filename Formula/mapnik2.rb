@@ -1,7 +1,8 @@
 class Mapnik2 < Formula
   desc "Toolkit for developing mapping applications"
   homepage "http://www.mapnik.org/"
-  url "https://s3.amazonaws.com/mapnik/dist/v2.2.0/mapnik-v2.2.0.tar.bz2"
+#   url "https://s3.amazonaws.com/mapnik/dist/v2.2.0/mapnik-v2.2.0.tar.bz2"
+  url "https://github.com/jonnyhuck/homebrew-understandinggis/blob/master/Download/mapnik-v2.2.0.tar.bz2?raw=true"
   sha256 "9b30de4e58adc6d5aa8478779d0a47fdabe6bf8b166b67a383b35f5aa5d6c1b0"
   revision 2
 
