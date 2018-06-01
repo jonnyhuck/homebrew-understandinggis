@@ -52,15 +52,14 @@ class Mapnik2 < Formula
     # so lets be cautious by limiting to CPUS/2
     jobs = ENV.make_jobs.to_i
     jobs /= 2 if jobs > 2
-
-    #"ICU_INCLUDES=#{icu}/include",
-    #"ICU_LIBS=#{icu}/lib",
     
     args = ["CC=\"#{ENV.cc}\"",
             "CXX=\"#{ENV.cxx}\"",
             "JOBS=#{jobs}",
             "PREFIX=#{prefix}",
-             "ICU_LIB_NAME=#{}unicode",
+            "ICU_INCLUDES=#{icu}/include",
+            "ICU_LIBS=#{icu}/lib",
+            "ICU_LIB_NAME=#{}unicode",
             "PYTHON_PREFIX=#{prefix}", # Install to Homebrew's site-packages
             "JPEG_INCLUDES=#{jpeg}/include",
             "JPEG_LIBS=#{jpeg}/lib",
