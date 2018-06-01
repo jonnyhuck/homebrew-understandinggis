@@ -59,7 +59,7 @@ class Mapnik2 < Formula
             "PREFIX=#{prefix}",
             "ICU_INCLUDES=#{icu}/include",
             "ICU_LIBS=#{icu}/lib",
-            "ICU_LIB_NAME=#{}unicode",
+            "ICU_LIB_NAME=#{}icu4c",
             "PYTHON_PREFIX=#{prefix}", # Install to Homebrew's site-packages
             "JPEG_INCLUDES=#{jpeg}/include",
             "JPEG_LIBS=#{jpeg}/lib",
