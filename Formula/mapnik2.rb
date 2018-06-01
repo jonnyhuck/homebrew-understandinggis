@@ -60,7 +60,7 @@ class Mapnik2 < Formula
             "CXX=\"#{ENV.cxx}\"",
             "JOBS=#{jobs}",
             "PREFIX=#{prefix}",
-             "ICU_LIB_NAME=#{}icucore",
+             "ICU_LIB_NAME=#{}unicode",
             "PYTHON_PREFIX=#{prefix}", # Install to Homebrew's site-packages
             "JPEG_INCLUDES=#{jpeg}/include",
             "JPEG_LIBS=#{jpeg}/lib",
