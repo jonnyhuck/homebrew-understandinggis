@@ -82,6 +82,8 @@ class Mapnik2 < Formula
     args << "GDAL_CONFIG=#{Formula["gdal"].opt_bin}/gdal-config" if build.with? "gdal"
     args << "PG_CONFIG=#{Formula["postgresql"].opt_bin}/pg_config" if build.with? "postgresql"
 
+    print args
+    
     #system "python", "scons/scons.py", "configure", *args
     #system "python", "scons/scons.py", "install"
     system "/usr/local/bin/python", "scons/scons.py", "configure", *args
