@@ -53,12 +53,15 @@ class Mapnik2 < Formula
     jobs = ENV.make_jobs.to_i
     jobs /= 2 if jobs > 2
 
+    #"ICU_INCLUDES=#{icu}/include",
+    #"ICU_LIBS=#{icu}/lib",
+    
     args = ["CC=\"#{ENV.cc}\"",
             "CXX=\"#{ENV.cxx}\"",
             "JOBS=#{jobs}",
             "PREFIX=#{prefix}",
-            "ICU_INCLUDES=#{icu}/include",
-            "ICU_LIBS=#{icu}/lib",
+            "ICU_INCLUDES=#{}/usr/local/Cellar/icu4c/61.1//include",
+            "ICU_LIBS=#{}/usr/local/Cellar/icu4c/61.1//lib",
             "PYTHON_PREFIX=#{prefix}", # Install to Homebrew's site-packages
             "JPEG_INCLUDES=#{jpeg}/include",
             "JPEG_LIBS=#{jpeg}/lib",
