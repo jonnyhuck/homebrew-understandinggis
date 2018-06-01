@@ -53,6 +53,7 @@ class Mapnik2 < Formula
     jobs = ENV.make_jobs.to_i
     jobs /= 2 if jobs > 2
 
+    #"BOOST_LIBS=#{boost}/lib",
     args = ["CC=\"#{ENV.cc}\"",
             "CXX=\"#{ENV.cxx}\"",
             "JOBS=#{jobs}",
@@ -67,7 +68,6 @@ class Mapnik2 < Formula
             "TIFF_INCLUDES=#{libtiff}/include",
             "TIFF_LIBS=#{libtiff}/lib",
             "BOOST_INCLUDES=#{boost}/include",
-            #"BOOST_LIBS=#{boost}/lib",
             "BOOST_LIBS=/usr/local/opt/boost@1.59/lib",
             "PROJ_INCLUDES=#{proj}/include",
             "PROJ_LIBS=#{proj}/lib",
