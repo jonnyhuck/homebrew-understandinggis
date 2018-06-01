@@ -68,7 +68,7 @@ class Mapnik2 < Formula
             "TIFF_INCLUDES=#{libtiff}/include",
             "TIFF_LIBS=#{libtiff}/lib",
             "BOOST_INCLUDES=#{boost}/include",
-            "BOOST_LIBS=/usr/local/opt/boost@1.59/lib",
+            "BOOST_LIBS=#{}/usr/local/opt/boost@1.59/lib",
             "PROJ_INCLUDES=#{proj}/include",
             "PROJ_LIBS=#{proj}/lib",
             "FREETYPE_CONFIG=#{freetype}/bin/freetype-config",
