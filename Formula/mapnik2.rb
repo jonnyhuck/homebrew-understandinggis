@@ -60,8 +60,7 @@ class Mapnik2 < Formula
             "CXX=\"#{ENV.cxx}\"",
             "JOBS=#{jobs}",
             "PREFIX=#{prefix}",
-            "ICU_INCLUDES=#{}/usr/local/Cellar/icu4c/61.1//include",
-            "ICU_LIBS=#{}/usr/local/Cellar/icu4c/61.1//lib",
+             "ICU_LIB_NAME=#{}icucore",
             "PYTHON_PREFIX=#{prefix}", # Install to Homebrew's site-packages
             "JPEG_INCLUDES=#{jpeg}/include",
             "JPEG_LIBS=#{jpeg}/lib",
