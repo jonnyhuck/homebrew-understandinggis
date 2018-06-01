@@ -53,13 +53,13 @@ class Mapnik2 < Formula
     jobs = ENV.make_jobs.to_i
     jobs /= 2 if jobs > 2
     
+    # "ICU_LIB_NAME=#{}icu4c", JJH added this - unsuccessful
     args = ["CC=\"#{ENV.cc}\"",
             "CXX=\"#{ENV.cxx}\"",
             "JOBS=#{jobs}",
             "PREFIX=#{prefix}",
             "ICU_INCLUDES=#{icu}/include",
             "ICU_LIBS=#{icu}/lib",
-            "ICU_LIB_NAME=#{}icu4c",
             "PYTHON_PREFIX=#{prefix}", # Install to Homebrew's site-packages
             "JPEG_INCLUDES=#{jpeg}/include",
             "JPEG_LIBS=#{jpeg}/lib",
